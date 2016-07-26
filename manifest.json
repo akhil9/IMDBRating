@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "IMDb rating",
+  "description": "This extension shows rating of movies on http://www.mydownloadtube.com/movies",
+  "version": "1.0",
+
+  "permissions": [
+    "http://www.omdbapi.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://mycoolmoviez.org/*"],
+      "js": ["rating.js"]
+    }
+  ]
+}
